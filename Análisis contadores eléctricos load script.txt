@@ -687,7 +687,7 @@ MAPPING LOAD
 	__Polygon
 RESIDENT __countryGeoBase;
 
-[LOTE_temp_afc4e41a-a09c-8b62-9f38-0ff772f2]:
+[LOTE_temp_cbec66fb-756d-780f-4259-545e5819]:
 LOAD
 	[fecha],
 	[DistNumber],
@@ -724,7 +724,7 @@ TAG FIELD [LOTE.Calidad EB_GeoInfo] WITH '$geopolygon', '$hidden', '$relates_Cal
 TAG FIELD [Calidad SS] WITH '$geoname', '$relates_LOTE.Calidad SS_GeoInfo';
 TAG FIELD [LOTE.Calidad SS_GeoInfo] WITH '$geopolygon', '$hidden', '$relates_Calidad SS';
 TAG FIELD [Calidad ES] WITH '$geoname', '$relates_LOTE.Calidad ES_GeoInfo';
-TAG FIELD [LOTE.Calidad ES_GeoInfo] WITH '$geopolygon', '$hidden', '$relates_Calidad ES';RENAME TABLE [LOTE_temp_afc4e41a-a09c-8b62-9f38-0ff772f2] to [LOTE];
+TAG FIELD [LOTE.Calidad ES_GeoInfo] WITH '$geopolygon', '$hidden', '$relates_Calidad ES';RENAME TABLE [LOTE_temp_cbec66fb-756d-780f-4259-545e5819] to [LOTE];
 
 DROP TABLES __countryGeoBase;
 [autoCalendar]: 
