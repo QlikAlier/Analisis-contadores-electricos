@@ -25,10 +25,11 @@ SET NumericalAbbreviation='3:k;6:M;9:G;12:T;15:P;18:E;21:Z;24:Y;-3:m;-6:μ;-9:n;
 // Versión 	Fecha		Autor					Descripción
 // 2.0.0	05/07/23	Florenci Gonzalez		Migració al cloud
 // 2.0.32	26/09/24	Florenci Gonzalez		Creada funció SetPath per assignar la ruta dels QVD
+// 2.1.02   15/10/26	Florenci Gonzalez		Afegir fulla per enviar per correu "Detalle Sensores (Finetika)"
 /////////////////////////////////////////////////////////////////////
 
 // Versión documento
-Set vVersion = '2.0.32';
+Set vVersion = '2.1.02';
 
 // Inclou funcions stàndard
 $(Must_Include=lib://ALIER_DATA:DataFiles/SBO_procedures.qvs);
@@ -687,7 +688,7 @@ MAPPING LOAD
 	__Polygon
 RESIDENT __countryGeoBase;
 
-[LOTE_temp_cbec66fb-756d-780f-4259-545e5819]:
+[LOTE_temp_140f1ddf-65f0-333c-f256-71de118c]:
 LOAD
 	[fecha],
 	[DistNumber],
@@ -724,7 +725,7 @@ TAG FIELD [LOTE.Calidad EB_GeoInfo] WITH '$geopolygon', '$hidden', '$relates_Cal
 TAG FIELD [Calidad SS] WITH '$geoname', '$relates_LOTE.Calidad SS_GeoInfo';
 TAG FIELD [LOTE.Calidad SS_GeoInfo] WITH '$geopolygon', '$hidden', '$relates_Calidad SS';
 TAG FIELD [Calidad ES] WITH '$geoname', '$relates_LOTE.Calidad ES_GeoInfo';
-TAG FIELD [LOTE.Calidad ES_GeoInfo] WITH '$geopolygon', '$hidden', '$relates_Calidad ES';RENAME TABLE [LOTE_temp_cbec66fb-756d-780f-4259-545e5819] to [LOTE];
+TAG FIELD [LOTE.Calidad ES_GeoInfo] WITH '$geopolygon', '$hidden', '$relates_Calidad ES';RENAME TABLE [LOTE_temp_140f1ddf-65f0-333c-f256-71de118c] to [LOTE];
 
 DROP TABLES __countryGeoBase;
 [autoCalendar]: 
